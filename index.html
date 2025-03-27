@@ -80,11 +80,26 @@
                 yref: 'y',
                 x0: 0,
                 x1: 1,
-                y0: 0.5*i + 0.5,
-                y1: 0.5*i + 0.5,
+                y0: i,
+                y1: i,
                 line: {
                     color: 'black',
                     width: 1
+                }
+                }));
+
+                const thinhorizontalGridLines = Array.from({ length: 10 }, (_, i) => ({
+                type: 'line',
+                xref: 'paper',
+                yref: 'y',
+                x0: 0,
+                x1: 1,
+                y0: i + 0.5,
+                y1: i + 0.5,
+                line: {
+                    color: 'black',
+                    width: 1,
+                    dash: 'dash'
                 }
                 }));
 
